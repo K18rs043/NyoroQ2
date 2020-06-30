@@ -39,7 +39,7 @@ void main_task(intptr_t unused) {
 
 		//検出した色ごとにモータ速度を変化
         switch(DetectionColor(color_sensor)){
-            case GLAY:		//灰色を検出
+            case GRAY:		//灰色を検出
 				//デフォルト速度で直進
                 forward(left_motor, right_motor, SPEED_DEFAULT);
                 break;
