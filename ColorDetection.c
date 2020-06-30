@@ -24,7 +24,7 @@ int DetectionColor(int color_sensor){
         //黒
         color = BLACK;
     }else if(midpoint-1 <= reflect && reflect <= midpoint+1){
-        color = GLAY;
+        color = GRAY;
     }else{
         color = RED;
     }
