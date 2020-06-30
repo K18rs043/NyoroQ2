@@ -13,14 +13,11 @@ void forward(int left_motor, int right_motor, int speed){
 
 }
 
-void turnLeft(int left_motor, int right_motor, int speed,int turnspeed){	
-	ev3_motor_set_power(left_motor,speed);
-	ev3_motor_set_power(right_motor,turnspeed);	
-}
 
-void turnRight(int left_motor, int right_motor, int speed,int turnspeed){
-	ev3_motor_set_power(left_motor,turnspeed);
-	ev3_motor_set_power(right_motor,speed);	
+void turn(int left_motor, int right_motor, int leftspeed,int rightspeed){
+	
+	ev3_motor_set_power(left_motor,leftspeed);
+	ev3_motor_set_power(right_motor,rightspeed);	
 }
 
 
